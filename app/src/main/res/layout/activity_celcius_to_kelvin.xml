@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CelciusToKelvin"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celcius To Kelvin"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/kelvintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:hint="Enter Celcius"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/kelvin_converter"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Covert TO kelvin"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/kelvin_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/pound"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/kgtopound"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/gram"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/kgtometer"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/meter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/metertofeet"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+</LinearLayout>
